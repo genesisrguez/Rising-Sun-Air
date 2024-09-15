@@ -226,7 +226,15 @@ nav a span {
 }
 
 /*CARDS SERVICES ENDS*/
+.services h1{
+    font-weight: 800;
+    color: rgb(44, 156, 255);
+}
 
+.highlight-card {
+    border: 4px solid #ff9800 !important; /* Borde de 5px con color naranja */
+    border-radius: 10px !important; /* Opcional: redondear las esquinas */
+  }
 /*ABOUT US*/
 .aboutus h1{
     font-weight: 800;

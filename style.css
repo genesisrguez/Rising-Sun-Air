@@ -1,0 +1,330 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+    position: relative;
+ }
+
+header{
+    position:sticky;
+    z-index: 999;
+    background-color: white;
+    width: 100vw;
+}
+
+.boxtop {
+    text-decoration: none;
+    background-color: orange;
+    text-align: center;
+    color: white;
+    font-size:large;
+    font-weight: 600;
+    padding: .5em;
+    text-shadow: rgba(21, 10, 95, 0.242) 5px 3px 5px;
+}
+
+/*NAV*/
+nav .btn-primary{
+    height: 3em;
+}
+
+nav .btn{
+    font-size: .8em;
+    font-weight: 600;
+}
+
+nav li{
+    font-size: 1em;
+    font-weight: 500;
+
+}
+
+nav .btn-txt {
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight:800;
+}
+
+
+@media (width >= 576px) {
+    nav .btn-contact-pc { 
+        visibility: visible;
+    }
+
+    nav .btn-contact-movil {
+        visibility: hidden;
+    }
+}
+
+nav a span {
+    margin-left: .5em;
+}
+
+@media (width < 576px) {
+    nav .btn-contact-pc {
+        visibility: hidden;
+        order: 2;
+    }
+}
+
+
+@media (max-width:768px) {
+    nav img{
+        width: 5em;
+        height: 3.5em;
+    }
+}
+
+@media (max-width:992px) {
+    nav img{
+        width: 5em;
+        height: 3em;
+    }
+}
+/*NAV ENDS*/
+
+/*HERO*/
+.hero-container{
+    height: 90vh;
+    text-align: center;
+}
+
+.hero {
+    background-image: url(./Multimedia/background_4.png);
+    height: 100%;
+    background-size: cover;
+}
+
+.hero img{
+    height: 18em;
+    width: 18em;
+}
+
+.hero h1, p{
+    color: white;
+}
+
+.hero h1{
+    font-size: 4em;
+    font-weight: 900;
+    line-height: 1em;
+    text-shadow: rgba(21, 10, 95, 0.242) 5px 5px 5px;
+    margin-top: -1em;
+}
+
+.hero p{
+    font-size: 1.2em;
+    font-weight: 600;
+    text-shadow: rgba(21, 10, 95, 0.242) 5px 5px 5px;
+}
+
+.hero .btn{
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    height: 3em;
+}
+
+@media (min-width: 576px) {
+    .hero img{
+        height: 20em;
+        width: 20em;
+    }
+    .hero h1{
+        font-size: 4.5em;
+        line-height: 1em;
+        text-shadow: rgba(21, 10, 95, 0.242) 5px 5px 5px;
+    }
+    
+    .hero p{
+        font-size: 1.2em;
+        font-weight: 600;
+        text-shadow: rgba(21, 10, 95, 0.242) 5px 5px 5px;
+    }
+}
+
+@media (min-width: 768px) {
+    .hero img{
+        height: 22em;
+        width: 22em;
+    }
+    .hero h1{
+        font-size: 4.5em;
+        line-height: 1em;
+        text-shadow: rgba(21, 10, 95, 0.242) 5px 5px 5px;
+    }
+    
+    .hero p{
+        font-size: 1.8em;
+        font-weight: 600;
+        text-shadow: rgba(21, 10, 95, 0.242) 5px 5px 5px;
+    }
+}
+
+@media (min-width: 992px) {
+    .hero-container{
+        height: 85vh;
+        text-align: center;
+    }
+
+    .hero img{
+        height: 23em;
+        width: 23em;
+    }
+    .hero h1{
+        font-size: 5em;
+        line-height: 1em;
+        text-shadow: rgba(21, 10, 95, 0.242) 5px 5px 5px;
+    }
+    
+    .hero p{
+        font-size: 1.8em;
+        font-weight: 600;
+        text-shadow: rgba(21, 10, 95, 0.242) 5px 5px 5px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .hero img{
+        height: 28em;
+        width: 28em;
+    }
+    .hero h1{
+        font-size: 6em;
+        font-weight: 900;
+        line-height: 1em;
+        text-shadow: rgba(21, 10, 95, 0.242) 5px 5px 5px;
+    }
+    
+    .hero p{
+        font-size: 1.8em;
+        font-weight: 600;
+        text-shadow: rgba(21, 10, 95, 0.242) 5px 5px 5px;
+        color: white;
+    }
+}
+*/
+/*HERO ENDS*/
+
+/*CARDS SERVICES*/
+
+#contenido1 {
+    display: none;
+    flex-flow: wrap;
+}
+
+#contenido2 {
+    display: none;
+    flex-flow: wrap;
+}
+
+#contenido3 {
+    display: none;
+    flex-flow: wrap;
+}
+
+/*CARDS SERVICES ENDS*/
+
+/*ABOUT US*/
+.aboutus h1{
+    font-weight: 800;
+    color: rgb(44, 156, 255);
+}
+
+.aboutus p{
+    font-size: large;
+    color: black;
+    text-align: justify;
+}
+
+.aboutus img{
+    border-radius: 225px 0 225px 0;
+    height: 350px;
+    width: 450px;
+}
+
+@media (max-width:768px){
+    .aboutus img{
+        height: 20em;
+        width: 25em;
+        border-radius: 200px 0 200px 0;
+    }
+
+    .aboutus p{
+        text-align: justify;
+        font-size: 1em;
+    }
+}
+
+@media (max-width:576px) {
+    .aboutus img{
+        height: 18em;
+        width: 22em;
+        border-radius: 175px 0 175px 0;
+    }
+
+    .aboutus p{
+        text-align: justify;
+        font-size: 1em;
+    }
+}
+
+/*ABOUT US ENDS*/
+
+.servicearea h1{
+    font-weight: 800;
+    color: rgb(44, 156, 255);
+}
+
+.poweredby a{
+    font-size: .8em;
+    color: grey;
+    text-decoration: none;
+}
+
+footer a{
+    text-decoration: none;
+    color: grey;
+}
+
+.card h1{
+    font-size: 1.2em;
+}
+
+.blog h1{
+    font-size: 3em;
+    font-weight: 600;
+}
+
+.blog p, li{
+    font-size: 1.2em;
+    text-align: justify;
+    color: black;
+}
+
+@media (max-width: 1200px) {
+    .blog img{
+        width: 350px;
+        height: 350px;
+        align-items: center;
+    }
+
+    .blog h1{
+        font-size: 1.8em;
+        font-weight: 600;
+    }
+
+    .blog h2{
+        font-size: 1.5em;
+    }
+
+    .blog p{
+        font-size: 1em;
+    }
+}
+
+.card .card-text{
+    color: black;
+}

@@ -18,7 +18,7 @@ header{
 
 .boxtop {
     text-decoration: none;
-    background-color: orange;
+    background-color: #ff9800;
     text-align: center;
     color: white;
     font-size:large;
@@ -270,7 +270,7 @@ nav a span {
 /*ABOUT US*/
 .aboutus h1{
     font-weight: 800;
-    color: rgb(44, 156, 255);
+    color: #2c9cff;
 }
 
 .aboutus p{

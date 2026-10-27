@@ -18,6 +18,10 @@
     <script src="./main.js"></script>
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--Fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
     <!--Hoja de estilos-->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -72,14 +76,14 @@
 }
 </script>
 </head>
-
+<body>
 <header>
       <!-- TOP BOX -->
       <div class="boxtop container-fluid">
         <div class="row">
              <div class="col">
-              Tune Ups $65 — Don't Get Stuck in the Heat 🛠️😎
-                 <a style="color:white" href="https://book.housecallpro.com/book/Rising-Sun-Air-Inc/112964d9c227471c8e84d4ea371a06f1" target="_blank" >BOOK NOW</a>
+              Cold desert nights are coming — Heating Tune Ups $65 ❄️🔥
+                 <a href="https://book.housecallpro.com/book/Rising-Sun-Air-Inc/112964d9c227471c8e84d4ea371a06f1" target="_blank" >BOOK NOW</a>
              </div>
          </div>
       </div>
@@ -88,7 +92,7 @@
     <nav class="navbar navbar-expand-lg">
         <div class="container">
             <a href="./index.html" class="navbar-brand" >
-              <img src="./Multimedia/logo.svg" alt="Rising Sun Air" alt="Rising Sun Air HVAC company serving Phoenix Metro Area including Chandler, Mesa and Scottsdale" width="60" height="60">
+              <img src="./Multimedia/logo.svg" alt="Rising Sun Air HVAC company serving Phoenix Metro Area including Chandler, Mesa and Scottsdale" width="60" height="60">
             </a>
             
             <!--BOTÓN PARA EL MENÚ MÓVIL-->
@@ -107,6 +111,7 @@
             <div class="collapse navbar-collapse" id="menu">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item"><a href="#services" class="nav-link">SERVICES</a></li>
+                    <li class="nav-item"><a href="#financing" class="nav-link">FINANCING</a></li>
                     <li class="nav-item"><a href="#aboutus" class="nav-link">ABOUT US</a></li>
                     <li class="nav-item"><a href="./blog.html" class="nav-link">BLOG</a></li>
                 </ul>
@@ -162,8 +167,7 @@
   </div>
 </div>
 
-<body>
-  <main>
+  <main id="main">
     <!--BANNER-->
         <section class="hero position-relative text-center text-md-start">
         <div class="hero-overlay"></div>
@@ -178,8 +182,8 @@
 
             <!-- Columna derecha (texto y botón CTA) -->
             <div class="col-md-6 mt-4 mt-md-0">
-                <h1 class="display-5 fw-bold" style="text-transform: uppercase;"> Caring for homes and businesses across Arizona</h1>
-                <p class="lead mb-4" style="color: white;">Residential & commercial HVAC service you can trust.</p>
+                <h1 class="display-5 fw-bold"> Caring for homes and businesses across Arizona</h1>
+                <p class="lead mb-4">Residential & commercial HVAC service you can trust.</p>
                 <a href="https://book.housecallpro.com/book/Rising-Sun-Air-Inc/112964d9c227471c8e84d4ea371a06f1"
                 class="btn btn-primary btn-hero btn-lg"  target="_blank"><STRONG>BOOK NOW</STRONG></a>
             </div>
@@ -193,9 +197,9 @@
       <div id="services" class="services container mt-5 mb-5 text-center">
         <div class="row">
           <div class="col">
-            <h2 class="animate__animated animate__bounceInDown">Our Services</h2>
-            <h2 class="animate__animated animate__slideInLeft animate__delay-1s">20 years of experience ensuring your comfort.</h2>
-            <hr class="w-25 mx-auto my-4">
+            <h2>Our Services</h2>
+            <h2 class="services-sub">20 years of experience ensuring your comfort.</h2>
+            <hr class="w-25 mx-auto my-4 section-rule">
           </div>
         </div>
         <div class="row">
@@ -221,7 +225,7 @@
             </div>
           </div>
           <div class="col-md-3 p-4 d-flex align-items-stretch">
-            <div class="animate__animated animate__shakeY card animate__delay-2s highlight-card">
+            <div class="card highlight-card">
               <img src="./Multimedia/SUNNY-PRO-TUNEUP.png" class="card-img-top" alt="Advanced HVAC maintenance service for homes and businesses in Phoenix Metro Area">
               <div class="card-body">
                 <h5 class="card-title">SUNNY <strong>PRO</strong> TUNE UP</h5>
@@ -244,19 +248,39 @@
         </div>
       </div>
     </section>
+    <!--FINANCING-->
+    <section id="financing" class="financing">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-7">
+            <h2>Financing available</h2>
+            <p class="financing-text">Need a repair or a new system and the timing is tight? We offer financing. Call us and we'll walk you through your options.</p>
+          </div>
+          <div class="col-lg-5 financing-cta">
+            <a class="btn btn-call" href="tel:+16237035747">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
+                <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+              </svg>
+              <span>Call (623) 703-5747</span>
+            </a>
+            <p class="financing-alt">Prefer to book? <a href="https://book.housecallpro.com/book/Rising-Sun-Air-Inc/112964d9c227471c8e84d4ea371a06f1" target="_blank" rel="noopener">Schedule a free estimate</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
     <!--ABOUT US-->
     <section id="aboutus" class="aboutus">
       <div class="container">
         <div class="row mb-5 d-flex align-items-center">
           <div class="col-12 col-lg-6">
-              <h2 class="animate__animated animate__bounceInDown">About us</h2>
-              <p class="aboutus-txt animate__animated animate__fadeInTopLeft animate__delay-1s">
+              <h2>About us</h2>
+              <p class="aboutus-txt">
                   At Rising Sun Air, we understand that a comfortable and energy-efficient home is essential for your family's well-being. That's why we are committed to providing top-notch air conditioning, heating, and home performance services that cater to our customers' unique needs.
               </p>
 
           </div>
           <div class="col-12 col-lg-6 d-flex align-items-center justify-content-center">
-              <img class="animate__animated animate__rotateIn" src="./Multimedia/Van-Mockup3.webp" alt="Rising Sun Air service van providing HVAC services across the Phoenix Metro Area">
+              <img src="./Multimedia/Van-Mockup3.webp" alt="Rising Sun Air service van providing HVAC services across the Phoenix Metro Area">
           </div>
         </div>
       </div>

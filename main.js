@@ -37,6 +37,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById("contactForm");
     const successMsg = document.getElementById("successMessage");
 
+    // El botón flotante está comentado en el HTML; si no existe, no hay nada que conectar
+    if (!openBtn || !overlay || !closeBtn || !form || !successMsg) return;
+
     // Abrir
     openBtn.addEventListener("click", () => {
         overlay.style.display = "flex";
